@@ -79,6 +79,14 @@
 
 
 //7. Reverse string
-function solution(str){
-    return str.split('').reverse().join('');  
-  }
+// function solution(str){
+//     return str.split('').reverse().join('');  
+//   }
+
+//8. Convert boolean values to strings 'Yes' or 'No'.
+//Complete the method that takes a boolean value and return a "Yes" string for true, or a "No" string for false.
+// function boolToWord( bool ){
+//     return bool ? "Yes" : "No"
+//   }
+
+9. 
