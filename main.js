@@ -42,9 +42,9 @@
 //Because Nathan knows it is important to stay hydrated, he drinks 0.5 litres of water per hour of cycling.
 //You get given the time in hours and you need to return the number of litres Nathan will drink, rounded to the smallest value.
 
-function litres(time) {
-    return Math.floor(time * 0.5);
-}
+// function litres(time) {
+//     return Math.floor(time * 0.5);
+// }
 
 
 //5. Sum of positive
@@ -61,9 +61,9 @@ function litres(time) {
 //     return sum
 // }
 
-function positiveSum(arr) {
-    return arr.reduce((sum, num) => sum + (num > 0 ? num : 0), 0)
-}
+// function positiveSum(arr) {
+//     return arr.reduce((sum, num) => sum + (num > 0 ? num : 0), 0)
+// }
 
 
 
@@ -73,9 +73,12 @@ function positiveSum(arr) {
 //     return -Math.abs(num)
 // }
 
-function makeNegative(num) {
-    return num > 0 ? -num : num
-}
+// function makeNegative(num) {
+//     return num > 0 ? -num : num
+// }
 
 
-//7.
+//7. Reverse string
+function solution(str){
+    return str.split('').reverse().join('');  
+  }
