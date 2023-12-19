@@ -89,4 +89,9 @@
 //     return bool ? "Yes" : "No"
 //   }
 
-9. 
+
+
+//9. Convert a Number to a String!
+function numberToString(num) {
+    return num.toString();
+  }
