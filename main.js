@@ -92,6 +92,13 @@
 
 
 //9. Convert a Number to a String!
-function numberToString(num) {
-    return num.toString();
+// function numberToString(num) {
+//     return num.toString();
+//   }
+
+
+//10. Opposite number
+//Very simple, given an integer or a floating-point number, find its opposite.
+function opposite(number) {
+    return -number
   }
