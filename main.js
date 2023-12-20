@@ -159,6 +159,17 @@
 
 
 //15. Remove String Spaces
-function noSpace(x){
-    return x.replaceAll(' ', '')
-}
+// function noSpace(x){
+//     return x.replaceAll(' ', '')
+// }
+//function noSpace(x){
+//     return x.split(' ').join('')
+// }
+
+
+//16. Find the smallest integer in the array
+class SmallestIntegerFinder {
+    findSmallestInt(args) {
+      return Math.min(...args)
+    }
+  }
