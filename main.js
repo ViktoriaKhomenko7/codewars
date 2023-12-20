@@ -142,15 +142,23 @@
 
 //через цикл
 
-// var summation = function (num) {
+// let summation = function (num) {       5 + 1 + 2 + 3 + 4 = 15
 //     let sum = 0;
 //     for(let i = 1; i <= num; i++){
 //       sum += i
 //     }
 //     return sum
 //   }
+//   console.log(summation(5));
 
 //по формуле
-var summation = function (num) {
- return num * (num + 1) / 2;
+// var summation = function (num) {    5 * (5 + 1) / 2 = 15
+//  return num * (num + 1) / 2;
+// }
+// console.log(summation(5));
+
+
+//15. Remove String Spaces
+function noSpace(x){
+    return x.replaceAll(' ', '')
 }
