@@ -127,8 +127,18 @@
 
 
 //13. String repeat
-function repeatStr (n, s) {
-    return s.repeat(n);
-}
+// function repeatStr (n, s) {
+//     return s.repeat(n);
+// }
 
-const repeatStr = (n,s) => s.repeat(n)
+// const repeatStr = (n,s) => s.repeat(n)
+
+
+//14. Grasshopper - Summation
+var summation = function (num) {
+    let sum = 0;
+    for(let i = 1; i <= num; i++){
+      sum += i
+    }
+    return sum
+  }
