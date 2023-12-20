@@ -168,8 +168,19 @@
 
 
 //16. Find the smallest integer in the array
-class SmallestIntegerFinder {
-    findSmallestInt(args) {
-      return Math.min(...args)
+// class SmallestIntegerFinder {
+//     findSmallestInt(args) {
+//       return Math.min(...args)
+//     }
+//   }
+
+//17. Counting sheep...
+function countSheeps(sheep) {
+    let sum = 0;
+    for(let i = 0; i < sheep.length; i++){
+      if(sheep[i]){
+        sum ++
+      }
     }
+    return sum
   }
