@@ -190,7 +190,7 @@
 //}
 
 //18. Convert a String to a Number!
-const stringToNumber = (str) => Number(str)
+// const stringToNumber = (str) => Number(str)
 
 
 
@@ -199,14 +199,14 @@ const stringToNumber = (str) => Number(str)
 //The function should take three arguments - operation(string/char), value1(number), value2(number).
 //The function should return result of numbers after applying the chosen operation.
 
-function basicOp(operation, value1, value2) {
-    switch (operation) {
-        case '+': return value1 + value2;
-        case '-': return value1 - value2;
-        case '*': return value1 * value2;
-        case '/': return value1 / value2;
-    }
-}
+// function basicOp(operation, value1, value2) {
+//     switch (operation) {
+//         case '+': return value1 + value2;
+//         case '-': return value1 - value2;
+//         case '*': return value1 * value2;
+//         case '/': return value1 / value2;
+//     }
+// }
 
 
 //20.Keep Hydrated!
@@ -216,7 +216,17 @@ function basicOp(operation, value1, value2) {
 //Because Nathan knows it is important to stay hydrated, he drinks 0.5 litres of water per hour of cycling.
 //You get given the time in hours and you need to return the number of litres Nathan will drink, rounded to the smallest value.
 
-function litres(time) {
-    return Math.floor(time * 0.5);
-  }
+// function litres(time) {
+//     return Math.floor(time * 0.5);
+//   }
 
+
+//21. Century From Year
+const century = (year) => Math.ceil(year/100)
+
+//22. Abbreviate a Two Word Name
+//Sam Harris => S.H
+function abbrevName(name){
+    let array = name.split(' ');
+    return (array[0][0] + "." + array[1][0]).toUpperCase()
+  }
