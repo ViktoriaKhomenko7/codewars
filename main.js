@@ -175,12 +175,48 @@
 //   }
 
 //17. Counting sheep...
-function countSheeps(sheep) {
-    let sum = 0;
-    for(let i = 0; i < sheep.length; i++){
-      if(sheep[i]){
-        sum ++
-      }
+// function countSheeps(sheep) {
+//     let sum = 0;
+//     for(let i = 0; i < sheep.length; i++){
+//       if(sheep[i]){
+//         sum ++
+//       }
+//     }
+//     return sum
+//   }
+
+//function countSheeps(sheep) {
+//  return sheeps.filter(Boolean).length;
+//}
+
+//18. Convert a String to a Number!
+const stringToNumber = (str) => Number(str)
+
+
+
+//19. Basic Mathematical Operations
+//Your task is to create a function that does four basic mathematical operations.
+//The function should take three arguments - operation(string/char), value1(number), value2(number).
+//The function should return result of numbers after applying the chosen operation.
+
+function basicOp(operation, value1, value2) {
+    switch (operation) {
+        case '+': return value1 + value2;
+        case '-': return value1 - value2;
+        case '*': return value1 * value2;
+        case '/': return value1 / value2;
     }
-    return sum
+}
+
+
+//20.Keep Hydrated!
+//Nathan loves cycling.
+//Because Nathan knows it is important to stay hydrated, he drinks 0.5 litres of water per hour of cycling.
+//You get given the time in hours and you need to return the number of litres Nathan will drink, rounded to the smallest value.Nathan loves cycling.
+//Because Nathan knows it is important to stay hydrated, he drinks 0.5 litres of water per hour of cycling.
+//You get given the time in hours and you need to return the number of litres Nathan will drink, rounded to the smallest value.
+
+function litres(time) {
+    return Math.floor(time * 0.5);
   }
+
