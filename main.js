@@ -222,11 +222,21 @@
 
 
 //21. Century From Year
-const century = (year) => Math.ceil(year/100)
+// const century = (year) => Math.ceil(year/100)
 
 //22. Abbreviate a Two Word Name
 //Sam Harris => S.H
-function abbrevName(name){
-    let array = name.split(' ');
-    return (array[0][0] + "." + array[1][0]).toUpperCase()
+// function abbrevName(name){
+//     let array = name.split(' ');
+//     return (array[0][0] + "." + array[1][0]).toUpperCase()
+//   }
+
+
+// function abbrevName(name){
+//     return name.split(' ').map(i => i[0].toUpperCase()).join('.')
+// }
+
+//22. Convert number to reversed array of digits
+function digitize(n) {
+    return String(n).split('').reverse().map(Number)
   }
