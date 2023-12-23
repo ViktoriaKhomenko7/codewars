@@ -243,13 +243,22 @@
 
 
 //23. Is n divisible by x and y
-function isDivisible(n, x, y) {
-    //   if(n%x===0 && n%y===0){
-    //      return true
-    //      } else {
-    //     return false
+// function isDivisible(n, x, y) {
+//     //   if(n%x===0 && n%y===0){
+//     //      return true
+//     //      } else {
+//     //     return false
+//     //   }
+//       return (n%x===0 && n%y===0) ? true : false
+//     }
+
+
+//24.A Needle in the Haystack
+function findNeedle(haystack) {
+    //   for(let i = 0; i < haystack.length; i++){
+    //     if(haystack[i] === "needle") {
+    //       return "found the needle at position " + i
+    //     }
     //   }
-      return (n%x===0 && n%y===0) ? true : false
+      return "found the needle at position " + haystack.indexOf('needle')
     }
-
-
