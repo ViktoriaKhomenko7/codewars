@@ -254,11 +254,16 @@
 
 
 //24.A Needle in the Haystack
-function findNeedle(haystack) {
-    //   for(let i = 0; i < haystack.length; i++){
-    //     if(haystack[i] === "needle") {
-    //       return "found the needle at position " + i
-    //     }
-    //   }
-      return "found the needle at position " + haystack.indexOf('needle')
-    }
+// function findNeedle(haystack) {
+//     //   for(let i = 0; i < haystack.length; i++){
+//     //     if(haystack[i] === "needle") {
+//     //       return "found the needle at position " + i
+//     //     }
+//     //   }
+//       return "found the needle at position " + haystack.indexOf('needle')
+//     }
+
+//25. Function 1 - hello world
+const greet = () => {
+    return "hello world"
+}
