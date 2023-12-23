@@ -237,6 +237,19 @@
 // }
 
 //22. Convert number to reversed array of digits
-function digitize(n) {
-    return String(n).split('').reverse().map(Number)
-  }
+// function digitize(n) {
+//     return String(n).split('').reverse().map(Number)
+//   }
+
+
+//23. Is n divisible by x and y
+function isDivisible(n, x, y) {
+    //   if(n%x===0 && n%y===0){
+    //      return true
+    //      } else {
+    //     return false
+    //   }
+      return (n%x===0 && n%y===0) ? true : false
+    }
+
+
