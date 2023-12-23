@@ -269,14 +269,20 @@
 // }
 
 
-//.26 Opposites Attract
+//26. Opposites Attract
 //Write a function that will take the number of petals of each flower and return true if they are in love and false if they aren't.
-function lovefunc(flower1, flower2){
-    return flower1 % 2 !== flower2 % 2 ? true : false
-  }
+// function lovefunc(flower1, flower2){
+//     return flower1 % 2 !== flower2 % 2 ? true : false
+//   }
 
-  function lovefunc(flower1, flower2){
-    if(flower1 % 2 === 0 && flower2 %2 === 1) return true
-    if (flower2 % 2 === 0 && flower1 % 2 === 1) return true
-    return false
-  }
+//   function lovefunc(flower1, flower2){
+//     if(flower1 % 2 === 0 && flower2 %2 === 1) return true
+//     if (flower2 % 2 === 0 && flower1 % 2 === 1) return true
+//     return false
+//   }
+
+//27.Beginner - Lost Without a Map
+//Given an array of integers, return a new array with each value doubled.
+function maps(x){
+    return x.map(el => el*2)
+}
