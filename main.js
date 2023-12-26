@@ -315,6 +315,20 @@
 
 
 //31.Your task is to write a function which returns the time since midnight in milliseconds.
-function past(h, m, s){
-  return (h*3600 + m*60 + s)*1000
+// function past(h, m, s){
+//   return (h*3600 + m*60 + s)*1000
+// }
+
+
+//32. Calculate average
+//Write a function which calculates the average of the numbers in a given list.
+function findAverage(array) {
+  let sum = 0;
+  for(let i = 0; i < array.length; i++){
+    sum += array[i]
+  }
+  return sum / array.length
 }
+
+
+return array.reduce((acc, num) => (acc + num) , 0) / array.length
