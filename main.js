@@ -322,13 +322,29 @@
 
 //32. Calculate average
 //Write a function which calculates the average of the numbers in a given list.
-function findAverage(array) {
-  let sum = 0;
-  for(let i = 0; i < array.length; i++){
-    sum += array[i]
-  }
-  return sum / array.length
+// function findAverage(array) {
+  // if(array.length === 0){
+  //   return 0
+  // }
+//   let sum = 0;
+//   for(let i = 0; i < array.length; i++){
+//     sum += array[i]
+//   }
+//   return sum / array.length
+// }
+
+//return array.length === 0 ? 0 : array.reduce((acc, ind)=> acc + ind, 0)/array.length
+
+
+//33. How good are you really?
+//You receive an array with your peers' test scores. Now calculate the average and compare your score! Return True if you're better, else False!
+
+function betterThanAverage(classPoints, yourPoints) {
+let sum = 0;
+for(let i = 0; i < classPoints.length; i++) {
+  sum += classPoints[i]
 }
+let classAvg = sum / classPoints.length
 
-
-return array.reduce((acc, num) => (acc + num) , 0) / array.length
+return yourPoints > classAvg
+}
