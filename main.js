@@ -339,12 +339,17 @@
 //33. How good are you really?
 //You receive an array with your peers' test scores. Now calculate the average and compare your score! Return True if you're better, else False!
 
-function betterThanAverage(classPoints, yourPoints) {
-let sum = 0;
-for(let i = 0; i < classPoints.length; i++) {
-  sum += classPoints[i]
-}
-let classAvg = sum / classPoints.length
+// function betterThanAverage(classPoints, yourPoints) {
+// let sum = 0;
+// for(let i = 0; i < classPoints.length; i++) {
+//   sum += classPoints[i]
+// }
+// let classAvg = sum / classPoints.length
 
-return yourPoints > classAvg
+// return yourPoints > classAvg
+// }
+
+function betterThanAverage(classPoints, yourPoints) {
+  const classAvg = classPoints.reduce((acc,num) => acc + num) / classPoints.length
+  return yourPoints > classAvg
 }
