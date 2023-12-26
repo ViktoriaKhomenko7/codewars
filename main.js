@@ -303,7 +303,18 @@
 
 
 //29. Convert a Boolean to a String
-function booleanToString(b){
-    return b.toString()
-}
+// function booleanToString(b){
+//     return b.toString()
+// }
 
+
+//30. 
+// function areYouPlayingBanjo(name) {
+//     return name[0] === "R" || name[0] === "r" ? name + " plays banjo" : name + " does not play banjo"
+//   }
+
+
+//31.Your task is to write a function which returns the time since midnight in milliseconds.
+function past(h, m, s){
+  return (h*3600 + m*60 + s)*1000
+}
