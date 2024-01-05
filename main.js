@@ -349,7 +349,66 @@
 // return yourPoints > classAvg
 // }
 
-function betterThanAverage(classPoints, yourPoints) {
-  const classAvg = classPoints.reduce((acc,num) => acc + num) / classPoints.length
-  return yourPoints > classAvg
+// function betterThanAverage(classPoints, yourPoints) {
+//   const classAvg = classPoints.reduce((acc,num) => acc + num) / classPoints.length
+//   return yourPoints > classAvg
+// }
+
+
+
+//34.Sum Arrays
+function sum (numbers) {
+  let sum = 0;
+  for(let i = 0; i < numbers.length; i++){
+    sum += numbers[i]
+  }
+  return sum
+};
+return numbers.reduce((acc, num) => acc + num, 0)
+
+
+//35. Invert values
+
+function invert(array) {
+  return array.map(num=>num*(-1))
 }
+
+
+//36. This kata is about multiplying a given number by eight if it is an even number and by nine otherwise.
+function simpleMultiplication(number) {
+  return number%2 === 0 ? number*8 : number*9
+}
+
+
+//37.Count of positives / sum of negatives
+function countPositivesSumNegatives(input) {
+  if(input === null || input.length === 0){
+    return []
+  }
+  let positives = 0;
+  let negatives = 0;
+  for(let i = 0; i < input.length; i++){
+    if(input[i] > 0){
+      positives += 1
+    } else {
+      negatives += input[i]
+    }
+  } return [positives, negatives]
+}
+
+//38. You only need one - Beginner
+//You will be given an array a and a value x. All you need to do is check whether the provided array contains the value.
+//Array can contain numbers or strings. X can be either. Return true if the array contains the value, false if not.
+function check(a, x) {
+  return a.includes(x)
+}
+
+
+//39.Fake Binary
+//Given a string of digits, you should replace any digit below 5 with '0' and any digit 5 and above with '1'. Return the resulting string.
+function fakeBin(x){
+  return x.split('').map(el => el>=5 ? 1 : 0).join('')
+}
+
+
+40. 
