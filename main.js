@@ -460,6 +460,6 @@
 //  }
 
 //42.Disemvowel Trolls   Удалить гласные из троки. Решается регулярным выражением
-function disemvowel(str) {
-  return str.replace(/[aeuio]/gi,'');
-}
+// function disemvowel(str) {
+//   return str.replace(/[aeuio]/gi,'');
+// }
