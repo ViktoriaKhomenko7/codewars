@@ -412,6 +412,9 @@
 
 
 //7 kyu
+
+
+
 //40. Count the divisors of a number
 //Count the number of divisors of a positive integer n. Random tests go up to n = 500000.
 // function getDivisorsCnt(n){
@@ -425,15 +428,29 @@
 // }
 // ЭТОТ СЛИШКОМ ДОЛГИЙ
 
-function getDivisorsCnt(n){
-  let result = 0;
-  if(n % Math.sqrt(n) == 0){
-      result++
-    }
-  for(let i = 0; i < Math.sqrt(n); i++){
-    if(n%i === 0){
-      result += 2
-    }
-  }
-  return result
+// function getDivisorsCnt(n){
+//   let result = 0;
+//   if(n % Math.sqrt(n) == 0){
+//       result++
+//     }
+//   for(let i = 0; i < Math.sqrt(n); i++){
+//     if(n%i === 0){
+//       result += 2
+//     }
+//   }
+//   return result
+// }
+
+
+// 41.Vowel Count
+//Return the number (count) of vowels in the given string. We will consider a, e, i, o, u as vowels for this Kata (but not y).
+//The input string will only consist of lower case letters and/or spaces.
+
+const vowelStr = "aeiou"
+function getCount(str) {
+  return [...str].reduce((acc, el) => {
+    if(vowelStr.indexOf(el) !== -1){
+      acc++
+    } return acc
+  }, 0)
 }
