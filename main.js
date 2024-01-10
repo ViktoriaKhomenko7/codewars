@@ -482,11 +482,11 @@
 
 //44. Highest and Lowest
 //highAndLow("1 2 3 4 5");  // return "5 1"
-function highAndLow(numbers){
-  let strArr = numbers.split(' ')
-  let maxVal = Math.max(...strArr)
-  let minVal = Math.min(...strArr)
-  return `${maxVal} ${minVal}`
-}
+// function highAndLow(numbers){
+//   let strArr = numbers.split(' ')
+//   let maxVal = Math.max(...strArr)
+//   let minVal = Math.min(...strArr)
+//   return `${maxVal} ${minVal}`
+// }
 
-const highAndLow = (numbers) => `${Math.max(...numbers.split(' '))} ${Math.min(...numbers.split(' '))}`
+// const highAndLow = (numbers) => `${Math.max(...numbers.split(' '))} ${Math.min(...numbers.split(' '))}`
