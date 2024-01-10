@@ -463,3 +463,17 @@
 // function disemvowel(str) {
 //   return str.replace(/[aeuio]/gi,'');
 // }
+
+
+//43. Square Every Digit
+//For example, if we run 9119 through the function, 811181 will come out, because 92 is 81 and 12 is 1. (81-1-1-81)
+function squareDigits(num){
+  let strNum = String(num)
+  let result = "";
+  for(let i = 0; i < strNum.length; i++){
+    result += strNum[i]**2
+  }
+  return Number(result)
+}
+//или
+const squareDigits = (num) => +String(num).split('').map(el => el ** 2).join('')
