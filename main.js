@@ -467,13 +467,26 @@
 
 //43. Square Every Digit
 //For example, if we run 9119 through the function, 811181 will come out, because 92 is 81 and 12 is 1. (81-1-1-81)
-function squareDigits(num){
-  let strNum = String(num)
-  let result = "";
-  for(let i = 0; i < strNum.length; i++){
-    result += strNum[i]**2
-  }
-  return Number(result)
+// function squareDigits(num){
+//   let strNum = String(num)
+//   let result = "";
+//   for(let i = 0; i < strNum.length; i++){
+//     result += strNum[i]**2
+//   }
+//   return Number(result)
+// }
+// //или
+// const squareDigits = (num) => +String(num).split('').map(el => el ** 2).join('')
+
+//return +num.toString().split('').map(i => i*i).join('');
+
+//44. Highest and Lowest
+//highAndLow("1 2 3 4 5");  // return "5 1"
+function highAndLow(numbers){
+  let strArr = numbers.split(' ')
+  let maxVal = Math.max(...strArr)
+  let minVal = Math.min(...strArr)
+  return `${maxVal} ${minVal}`
 }
-//или
-const squareDigits = (num) => +String(num).split('').map(el => el ** 2).join('')
+
+const highAndLow = (numbers) => `${Math.max(...numbers.split(' '))} ${Math.min(...numbers.split(' '))}`
