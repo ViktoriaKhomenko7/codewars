@@ -459,6 +459,18 @@
 //   return str.split('').filter(c => "aeiouAEIOU".includes(c)).length;
 //  }
 
+// let vowelString = 'aeiou'
+// const getCount = (str) => {
+//   let vowelCount = 0;
+//   str.split('').forEach(el => {
+//     if(vowelString.indexOf(el) !== -1){
+//       vowelCount++
+//     }
+//   })
+//   return vowelCount
+// }
+
+
 //42.Disemvowel Trolls   Удалить гласные из троки. Решается регулярным выражением
 // function disemvowel(str) {
 //   return str.replace(/[aeuio]/gi,'');
@@ -490,3 +502,13 @@
 // }
 
 // const highAndLow = (numbers) => `${Math.max(...numbers.split(' '))} ${Math.min(...numbers.split(' '))}`
+
+// function highAndLow(numbers){
+//   numbers = numbers.split(' ');
+//   return Math.max(...numbers) + ' ' + Math.min(...numbers);
+// }
+
+
+//.45 Descending Order
+//Input: 42145 Output: 54421
+const descendingOrder = (n) => Number([...String(n)].sort((a,b) => b - a).join(''))
