@@ -517,6 +517,11 @@
 
 //46.List Filtering
 //filter_list([1,2,'a','b']) == [1,2]
-function filter_list(l) {
-  return l.filter(el => typeof el == "number")
-}
+// function filter_list(l) {
+//   return l.filter(el => typeof el == "number")
+// }
+
+
+//47.Mumbling
+//accum("abcd") -> "A-Bb-Ccc-Dddd"
+const accum = (s) => s.split('').map((el, num) => (el.toUpperCase() + el.toLowerCase().repeat(num))).join('-')
