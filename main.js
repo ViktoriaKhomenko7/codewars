@@ -509,6 +509,14 @@
 // }
 
 
-//.45 Descending Order
+//45. Descending Order
 //Input: 42145 Output: 54421
-const descendingOrder = (n) => Number([...String(n)].sort((a,b) => b - a).join(''))
+//const descendingOrder = (n) => Number([...String(n)].sort((a,b) => b - a).join(''))
+
+
+
+//46.List Filtering
+//filter_list([1,2,'a','b']) == [1,2]
+function filter_list(l) {
+  return l.filter(el => typeof el == "number")
+}
