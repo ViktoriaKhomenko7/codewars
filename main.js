@@ -524,4 +524,18 @@
 
 //47.Mumbling
 //accum("abcd") -> "A-Bb-Ccc-Dddd"
-const accum = (s) => s.split('').map((el, num) => (el.toUpperCase() + el.toLowerCase().repeat(num))).join('-')
+//const accum = (s) => s.split('').map((el, num) => (el.toUpperCase() + el.toLowerCase().repeat(num))).join('-')
+
+
+
+//48. You're a square!
+//-1  =>  false
+//4  =>  true
+let isSquare = (n) => {
+  let value = Math.floor(Math.sqrt(n))
+  if(value ** 2 == n){
+    return true
+  } else {
+    return false
+  }
+}
