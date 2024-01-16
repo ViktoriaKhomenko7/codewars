@@ -551,7 +551,14 @@
 //The method must return a boolean and be case insensitive. The string can contain any char.
 //XO("ooxXm") => true
 //XO("zpzpzpp") => true // when no 'x' and 'o' is present should return true
-function XO(str) {
-  let arr = str.toLowerCase().split('')
-  return arr.filter(el=> el == 'x').length == arr.filter(el=> el == 'o').length
-}
+// function XO(str) {
+//   let arr = str.toLowerCase().split('')
+//   return arr.filter(el=> el == 'x').length == arr.filter(el=> el == 'o').length
+// }
+
+//51.Jaden Casing Strings
+// Not Jaden-Cased: "How can mirrors be real if our eyes aren't real"
+// Jaden-Cased:     "How Can Mirrors Be Real If Our Eyes Aren't Real"
+String.prototype.toJadenCase = function () {
+  return this.split(' ').map(w => w[0].toUpperCase() + w.slice(1)).join(' ')
+};
