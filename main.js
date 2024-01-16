@@ -531,11 +531,27 @@
 //48. You're a square!
 //-1  =>  false
 //4  =>  true
-let isSquare = (n) => {
-  let value = Math.floor(Math.sqrt(n))
-  if(value ** 2 == n){
-    return true
-  } else {
-    return false
-  }
+// let isSquare = (n) => {
+//   let value = Math.floor(Math.sqrt(n))
+//   if(value ** 2 == n){
+//     return true
+//   } else {
+//     return false
+//   }
+// }
+
+
+//49. Isograms
+//isIsogram "Dermatoglyphics" = true  isIsogram "moose" = false
+
+
+//50.
+//Exes and Ohs
+//Check to see if a string has the same amount of 'x's and 'o's. 
+//The method must return a boolean and be case insensitive. The string can contain any char.
+//XO("ooxXm") => true
+//XO("zpzpzpp") => true // when no 'x' and 'o' is present should return true
+function XO(str) {
+  let arr = str.toLowerCase().split('')
+  return arr.filter(el=> el == 'x').length == arr.filter(el=> el == 'o').length
 }
