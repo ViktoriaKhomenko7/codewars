@@ -559,6 +559,11 @@
 //51.Jaden Casing Strings
 // Not Jaden-Cased: "How can mirrors be real if our eyes aren't real"
 // Jaden-Cased:     "How Can Mirrors Be Real If Our Eyes Aren't Real"
-String.prototype.toJadenCase = function () {
-  return this.split(' ').map(w => w[0].toUpperCase() + w.slice(1)).join(' ')
-};
+// String.prototype.toJadenCase = function () {
+//   return this.split(' ').map(w => w[0].toUpperCase() + w.slice(1)).join(' ')
+// };
+
+
+//52.Shortest Word
+//Simple, given a string of words, return the length of the shortest word(s).
+const findShort = (s) => Math.min(...s.split(' ').map(s=>s.length))
