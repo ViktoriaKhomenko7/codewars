@@ -574,3 +574,11 @@
 // "64607935616"     --> "#######5616"
 //"1"                --> "1"
 const maskify = cc => cc.slice(-4).padStart(cc.length, '#')
+
+
+//54.Sum of two lowest positive integers
+const sumTwoSmallestNumbers =(numbers) => {
+  numbers.sort((a,b) => a - b)
+  let res = numbers[0] + numbers[1]
+  return res
+}
