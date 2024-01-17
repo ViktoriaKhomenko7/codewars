@@ -566,4 +566,11 @@
 
 //52.Shortest Word
 //Simple, given a string of words, return the length of the shortest word(s).
-const findShort = (s) => Math.min(...s.split(' ').map(s=>s.length))
+// const findShort = (s) => Math.min(...s.split(' ').map(s=>s.length))
+
+
+//53.Credit Card Mask
+//"4556364607935616" --> "############5616"
+// "64607935616"     --> "#######5616"
+//"1"                --> "1"
+const maskify = cc => cc.slice(-4).padStart(cc.length, '#')
