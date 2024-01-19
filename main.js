@@ -586,20 +586,25 @@
 
 //55.Beginner Series #3 Sum of Numbers
 //(-1, 2) --> 2 (-1 + 0 + 1 + 2 = 2)
-const getSum = (a, b) => {
-  let min = Math.min(a,b) //1
-  let max = Math.max(a,b) //3
-  return (max - min + 1) * (max + min) / 2
- }
+// const getSum = (a, b) => {
+//   let min = Math.min(a,b) //1
+//   let max = Math.max(a,b) //3
+//   return (max - min + 1) * (max + min) / 2
+//  }
 
 
 //56. Two to One
 //a = "xyaabbbccccdefww"
 //b = "xxxxyyyyabklmopq"
 //longest(a, b) -> "abcdefklmopqwxy"
-const longest = (s1, s2) => [...new Set(s1+s2)].sort().join('')
+// const longest = (s1, s2) => [...new Set(s1+s2)].sort().join('')
 
-function longest(s1, s2) {
-  let str = new Set([...s1, ...s2]);
-  return [...str].sort().join('');
-  }
+// function longest(s1, s2) {
+//   let str = new Set([...s1, ...s2]);
+//   return [...str].sort().join('');
+//   }
+
+
+//57.Friend or Foe?
+//Ex: Input = ["Ryan", "Kieran", "Jason", "Yous"], Output = ["Ryan", "Yous"]
+const friend = (friends) => friends.filter(f => f.length === 4)
