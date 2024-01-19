@@ -591,3 +591,15 @@ const getSum = (a, b) => {
   let max = Math.max(a,b) //3
   return (max - min + 1) * (max + min) / 2
  }
+
+
+//56. Two to One
+//a = "xyaabbbccccdefww"
+//b = "xxxxyyyyabklmopq"
+//longest(a, b) -> "abcdefklmopqwxy"
+const longest = (s1, s2) => [...new Set(s1+s2)].sort().join('')
+
+function longest(s1, s2) {
+  let str = new Set([...s1, ...s2]);
+  return [...str].sort().join('');
+  }
