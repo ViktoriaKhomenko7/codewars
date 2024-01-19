@@ -608,3 +608,11 @@
 //57.Friend or Foe?
 //Ex: Input = ["Ryan", "Kieran", "Jason", "Yous"], Output = ["Ryan", "Yous"]
 const friend = (friends) => friends.filter(f => f.length === 4)
+
+
+//58.Categorize New Member
+//input =  [[18, 20], [45, 2], [61, 12], [37, 6], [21, 21], [78, 9]]
+//output = ["Open", "Open", "Senior", "Open", "Open", "Senior"]
+function openOrSenior(data){
+  return data.map(([age, handicap]) => (age > 54 && handicap > 7) ? "Senior" : "Open")
+}
