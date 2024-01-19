@@ -573,12 +573,21 @@
 //"4556364607935616" --> "############5616"
 // "64607935616"     --> "#######5616"
 //"1"                --> "1"
-const maskify = cc => cc.slice(-4).padStart(cc.length, '#')
+// const maskify = cc => cc.slice(-4).padStart(cc.length, '#')
 
 
 //54.Sum of two lowest positive integers
-const sumTwoSmallestNumbers =(numbers) => {
-  numbers.sort((a,b) => a - b)
-  let res = numbers[0] + numbers[1]
-  return res
-}
+// const sumTwoSmallestNumbers =(numbers) => {
+//   numbers.sort((a,b) => a - b)
+//   let res = numbers[0] + numbers[1]
+//   return res
+// }
+
+
+//55.Beginner Series #3 Sum of Numbers
+//(-1, 2) --> 2 (-1 + 0 + 1 + 2 = 2)
+const getSum = (a, b) => {
+  let min = Math.min(a,b) //1
+  let max = Math.max(a,b) //3
+  return (max - min + 1) * (max + min) / 2
+ }
