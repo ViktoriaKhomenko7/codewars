@@ -621,10 +621,28 @@
 //59.Find the next perfect square!
 //121 --> 144
 //114 --> -1 since 114 is not a perfect square
-function findNextSquare(sq) {
-  if(Math.sqrt(sq)%1 === 0){
-    return (Math.sqrt(sq)+1)**2
-  } else {
-      return -1;
+// function findNextSquare(sq) {
+//   if(Math.sqrt(sq)%1 === 0){
+//     return (Math.sqrt(sq)+1)**2
+//   } else {
+//       return -1;
+//   }
+// }
+
+
+//60. Printer Errors
+//s="aaabbbbhaijjjm"
+//printer_error(s) => "0/14"
+
+//s="aaaxbbbbyyhwawiwjjjwwm"
+//printer_error(s) => "8/22"
+
+function printerError(s) {
+  let count = 0;
+for(let i = 0; i < s.length; i++){
+  if(s[i] > 'm'){
+    count++
   }
+}
+return count + "/" + s.length
 }
