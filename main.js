@@ -646,3 +646,8 @@ for(let i = 0; i < s.length; i++){
 }
 return count + "/" + s.length
 }
+
+function printerError(s) {
+  let b = Array.from(s).filter(letter => letter > "m");
+  return b.length+"/"+s.length;
+}
