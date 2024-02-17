@@ -709,16 +709,43 @@
 //Spaces will be included only when more than one word is present.
 //"Hey fellow warriors"  --> "Hey wollef sroirraw" 
 
-const spinWords = (string) => {
-  let arrString = string.split(' ')
-  let reverseString = (str) => {
-    return str.split("").reverse().join("")
-  }
-  for(let i = 0; i < arrString.length; i++){
-    if(arrString[i].length >= 5){
-      const word = arrString[i]
-      arrString[i] = reverseString(word)
-    }
-  }
-  return arrString.join(' ')
+// const spinWords = (string) => {
+//   let arrString = string.split(' ')
+//   let reverseString = (str) => {
+//     return str.split("").reverse().join("")
+//   }
+//   for(let i = 0; i < arrString.length; i++){
+//     if(arrString[i].length >= 5){
+//       const word = arrString[i]
+//       arrString[i] = reverseString(word)
+//     }
+//   }
+//   return arrString.join(' ')
+// }
+
+// function spinWords(words){
+//   return words.split(' ').map(function (word) {
+//     return (word.length > 4) ? word.split('').reverse().join('') : word;
+//   }).join(' ');
+// }
+
+// function spinWords(str){
+//   return str.split(' ').map( w => w.length<5 ? w : w.split('').reverse().join('') ).join(' ');
+// }
+
+
+//63. Find the odd int
+//Given an array of integers, find the one that appears an odd number of times.
+//There will always be only one integer that appears an odd number of times.
+//[0,1,0,1,0] should return 0, because it occurs 3 times (which is odd).
+// function findOdd(A) {
+//   let count = {};
+//  A.forEach(v => {
+//    count[v] = count[v] ? count[v] + 1 : 1;
+//  });
+//  return +Object.keys(count).find(key => count[key] % 2 === 1);
+// }
+
+function findOdd(arr) {
+  return arr.find((item, index) => arr.filter(el => el == item).length % 2)
 }
