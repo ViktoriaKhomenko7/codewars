@@ -691,12 +691,34 @@
 //   }
 //   return sum
 // }
-function solution(number){
-  sum = 0
-  for (i = 3; i < number; i++) {
-    if (i % 3 == 0 || i % 5 == 0) {
-      sum += i;
+// function solution(number){
+//   sum = 0
+//   for (i = 3; i < number; i++) {
+//     if (i % 3 == 0 || i % 5 == 0) {
+//       sum += i;
+//     }
+//   }
+//   return sum;
+// }
+
+//62.Stop gninnipS My sdroW!
+//Write a function that takes in a string of one or more words, 
+//and returns the same string, but with all words that have five 
+//or more letters reversed (Just like the name of this Kata). 
+//Strings passed in will consist of only letters and spaces. 
+//Spaces will be included only when more than one word is present.
+//"Hey fellow warriors"  --> "Hey wollef sroirraw" 
+
+const spinWords = (string) => {
+  let arrString = string.split(' ')
+  let reverseString = (str) => {
+    return str.split("").reverse().join("")
+  }
+  for(let i = 0; i < arrString.length; i++){
+    if(arrString[i].length >= 5){
+      const word = arrString[i]
+      arrString[i] = reverseString(word)
     }
   }
-  return sum;
+  return arrString.join(' ')
 }
